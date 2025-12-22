@@ -840,6 +840,9 @@ body {
         opacity: 0;
         pointer-events: none;
         transition: all 0.3s ease;
+        border-bottom: 1px solid var(--border);
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
     }
 
     .nav-menu.active {
@@ -852,17 +855,73 @@ body {
         display: block;
     }
 
+    .hero {
+        padding: 80px 16px 60px;
+        gap: 40px;
+    }
+
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-stats {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .hero-stat {
+        min-width: 60px;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+
+    .btn-large {
+        padding: 14px 24px;
+        font-size: 1rem;
     }
 
     .section-header h2 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+    }
+
+    .section-header p {
+        font-size: 0.95rem;
     }
 
     .features-grid,
     .resources-grid {
         grid-template-columns: 1fr;
+    }
+
+    .feature-card,
+    .resource-card {
+        padding: 24px;
     }
 
     .modules-timeline::before {
@@ -872,18 +931,182 @@ body {
     .module-marker {
         width: 42px;
         height: 42px;
+        font-size: 0.95rem;
+    }
+
+    .module-content {
+        padding: 16px;
+    }
+
+    .module-content:hover {
+        transform: translateX(4px);
+    }
+
+    .module-header {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .module-header h3 {
+        font-size: 1rem;
+        flex: 1 0 100%;
+        margin-left: 0;
+    }
+
+    .module-header i {
+        display: none;
     }
 
     .cta h2 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+    }
+
+    .cta p {
+        font-size: 1rem;
     }
 
     .cta-buttons {
         flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        justify-content: center;
     }
 
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 32px;
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-links ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 16px;
+    }
+
+    .footer-links li {
+        margin-bottom: 0;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .code-window {
+        max-width: 100%;
+    }
+
+    .window-content {
+        padding: 16px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .navbar {
+        height: 60px;
+    }
+
+    .nav-logo span {
+        display: none;
+    }
+
+    .nav-logo i {
+        font-size: 1.75rem;
+    }
+
+    .nav-menu {
+        top: 60px;
+        padding: 16px;
+    }
+
+    .hero {
+        padding: 70px 12px 40px;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+    }
+
+    .hero-stats {
+        gap: 12px;
+    }
+
+    .hero-stat {
+        min-width: 50px;
+    }
+
+    .stat-number {
+        font-size: 1.25rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-badge {
+        font-size: 0.75rem;
+        padding: 4px 12px;
+    }
+
+    .feature-card,
+    .resource-card {
+        padding: 20px;
+    }
+
+    .feature-icon,
+    .resource-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 1.1rem;
+    }
+
+    .feature-card h3 {
+        font-size: 1.05rem;
+    }
+
+    .module-item {
+        gap: 12px;
+    }
+
+    .module-marker {
+        width: 36px;
+        height: 36px;
+        font-size: 0.85rem;
+    }
+
+    .modules-timeline::before {
+        left: 17px;
+    }
+
+    .cta {
+        padding: 60px 0;
+    }
+
+    .cta h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        padding: 40px 0 0;
+    }
+
+    .footer-bottom {
+        padding: 16px 0;
     }
 }
