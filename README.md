@@ -598,7 +598,7 @@ Bu eğitim materyallerinin oluşturulmasına katkıda bulunan herkese teşekkür
 ### 👤 Eğitmen
 
 [![GitHub](https://img.shields.io/badge/GitHub-Furk4nBulut-181717?style=for-the-badge&logo=github)](https://github.com/Furk4nBulut)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Furkan_Bulut-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/furk4nbulut)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Furkan_Bulut-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/furkanblt)
 
 </div>
 
