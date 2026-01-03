@@ -70,7 +70,7 @@ jobs:
             filename=$(basename "$file")
             echo "Kontrol ediliyor: $filename"
             
-            if [[ ! $filename =~ ^Problem[1-4]_[0-9]+\\.cs$ ]]; then
+            if [[ ! $filename =~ ^Problem[1-4]_[0-9]+\.cs$ ]]; then
               echo "❌ HATA: $filename formatı yanlış!"
               echo "   Beklenen: ProblemX_OGRENCI_NO.cs (öğrenci numarası, hane sayısı sınırlaması yok)"
               INVALID_FILES="${INVALID_FILES}${filename}, "
